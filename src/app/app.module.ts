@@ -19,6 +19,8 @@ import { PastTranningComponent } from './past-tranning/past-tranning.component';
 import { AlertComponent } from './alert/alert.component';
 import { LoadingSpinningComponent } from './loading-spinning/loading-spinning.component';
 import { ProductsComponent } from './products/products.component';
+import { AdminProductsComponent } from './admin/admin-products/admin-products.component';
+import { AdminFormComponent } from './admin/admin-form/admin-form.component';
 
 @NgModule({
   declarations: [
@@ -39,7 +41,9 @@ import { ProductsComponent } from './products/products.component';
     PastTranningComponent,
     AlertComponent,
     LoadingSpinningComponent,
-    ProductsComponent
+    ProductsComponent,
+    AdminProductsComponent,
+    AdminFormComponent
   ],
   imports: [
     BrowserModule
