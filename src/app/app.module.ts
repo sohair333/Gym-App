@@ -10,6 +10,12 @@ import { ContactUsComponent } from './contact-us/contact-us.component';
 import { AboutUsComponent } from './about-us/about-us.component';
 import { CoachesListComponent } from './coaches-list/coaches-list.component';
 import { CoachesDetailsComponent } from './coaches-details/coaches-details.component';
+import { AuthComponent } from './auth/auth.component';
+import { ReviewsComponent } from './reviews/reviews.component';
+import { CurrentTranningComponent } from './current-tranning/current-tranning.component';
+import { TranningComponent } from './tranning/tranning.component';
+import { NewTranningComponent } from './new-tranning/new-tranning.component';
+import { PastTranningComponent } from './past-tranning/past-tranning.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +27,13 @@ import { CoachesDetailsComponent } from './coaches-details/coaches-details.compo
     ContactUsComponent,
     AboutUsComponent,
     CoachesListComponent,
-    CoachesDetailsComponent
+    CoachesDetailsComponent,
+    AuthComponent,
+    ReviewsComponent,
+    CurrentTranningComponent,
+    TranningComponent,
+    NewTranningComponent,
+    PastTranningComponent
   ],
   imports: [
     BrowserModule
