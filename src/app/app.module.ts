@@ -16,6 +16,9 @@ import { CurrentTranningComponent } from './current-tranning/current-tranning.co
 import { TranningComponent } from './tranning/tranning.component';
 import { NewTranningComponent } from './new-tranning/new-tranning.component';
 import { PastTranningComponent } from './past-tranning/past-tranning.component';
+import { AlertComponent } from './alert/alert.component';
+import { LoadingSpinningComponent } from './loading-spinning/loading-spinning.component';
+import { ProductsComponent } from './products/products.component';
 
 @NgModule({
   declarations: [
@@ -33,7 +36,10 @@ import { PastTranningComponent } from './past-tranning/past-tranning.component';
     CurrentTranningComponent,
     TranningComponent,
     NewTranningComponent,
-    PastTranningComponent
+    PastTranningComponent,
+    AlertComponent,
+    LoadingSpinningComponent,
+    ProductsComponent
   ],
   imports: [
     BrowserModule
