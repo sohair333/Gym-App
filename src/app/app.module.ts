@@ -21,6 +21,8 @@ import { LoadingSpinningComponent } from './loading-spinning/loading-spinning.co
 import { ProductsComponent } from './products/products.component';
 import { AdminProductsComponent } from './admin/admin-products/admin-products.component';
 import { AdminFormComponent } from './admin/admin-form/admin-form.component';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { TestimonialsComponent } from './testimonials/testimonials.component';
 
 @NgModule({
   declarations: [
@@ -43,7 +45,9 @@ import { AdminFormComponent } from './admin/admin-form/admin-form.component';
     LoadingSpinningComponent,
     ProductsComponent,
     AdminProductsComponent,
-    AdminFormComponent
+    AdminFormComponent,
+    PageNotFoundComponent,
+    TestimonialsComponent
   ],
   imports: [
     BrowserModule
