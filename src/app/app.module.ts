@@ -23,6 +23,8 @@ import { AdminProductsComponent } from './admin/admin-products/admin-products.co
 import { AdminFormComponent } from './admin/admin-form/admin-form.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { TestimonialsComponent } from './testimonials/testimonials.component';
+import { SliderCarsoulComponent } from './slider-carsoul/slider-carsoul.component';
+import { BackToTopComponent } from './back-to-top/back-to-top.component';
 
 @NgModule({
   declarations: [
@@ -47,7 +49,9 @@ import { TestimonialsComponent } from './testimonials/testimonials.component';
     AdminProductsComponent,
     AdminFormComponent,
     PageNotFoundComponent,
-    TestimonialsComponent
+    TestimonialsComponent,
+    SliderCarsoulComponent,
+    BackToTopComponent
   ],
   imports: [
     BrowserModule
