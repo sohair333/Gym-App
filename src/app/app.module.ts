@@ -25,6 +25,7 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
 import { TestimonialsComponent } from './testimonials/testimonials.component';
 import { SliderCarsoulComponent } from './slider-carsoul/slider-carsoul.component';
 import { BackToTopComponent } from './back-to-top/back-to-top.component';
+import { ChatComponent } from './chat/chat.component';
 
 @NgModule({
   declarations: [
@@ -51,7 +52,8 @@ import { BackToTopComponent } from './back-to-top/back-to-top.component';
     PageNotFoundComponent,
     TestimonialsComponent,
     SliderCarsoulComponent,
-    BackToTopComponent
+    BackToTopComponent,
+    ChatComponent
   ],
   imports: [
     BrowserModule
