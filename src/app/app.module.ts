@@ -26,6 +26,8 @@ import { TestimonialsComponent } from './testimonials/testimonials.component';
 import { SliderCarsoulComponent } from './slider-carsoul/slider-carsoul.component';
 import { BackToTopComponent } from './back-to-top/back-to-top.component';
 import { ChatComponent } from './chat/chat.component';
+import { ProductDetailsComponent } from './products/product-details/product-details.component';
+import { UsersComponent } from './admin/users/users.component';
 
 @NgModule({
   declarations: [
@@ -53,7 +55,9 @@ import { ChatComponent } from './chat/chat.component';
     TestimonialsComponent,
     SliderCarsoulComponent,
     BackToTopComponent,
-    ChatComponent
+    ChatComponent,
+    ProductDetailsComponent,
+    UsersComponent
   ],
   imports: [
     BrowserModule
