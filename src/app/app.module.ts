@@ -28,6 +28,7 @@ import { BackToTopComponent } from './back-to-top/back-to-top.component';
 import { ChatComponent } from './chat/chat.component';
 import { ProductDetailsComponent } from './products/product-details/product-details.component';
 import { UsersComponent } from './admin/users/users.component';
+import { DarkModeComponent } from './dark-mode/dark-mode.component';
 
 @NgModule({
   declarations: [
@@ -57,7 +58,8 @@ import { UsersComponent } from './admin/users/users.component';
     BackToTopComponent,
     ChatComponent,
     ProductDetailsComponent,
-    UsersComponent
+    UsersComponent,
+    DarkModeComponent
   ],
   imports: [
     BrowserModule
