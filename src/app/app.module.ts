@@ -29,6 +29,7 @@ import { ChatComponent } from './chat/chat.component';
 import { ProductDetailsComponent } from './products/product-details/product-details.component';
 import { UsersComponent } from './admin/users/users.component';
 import { DarkModeComponent } from './dark-mode/dark-mode.component';
+import { SignUpComponent } from './sign-up/sign-up.component';
 
 @NgModule({
   declarations: [
@@ -59,7 +60,8 @@ import { DarkModeComponent } from './dark-mode/dark-mode.component';
     ChatComponent,
     ProductDetailsComponent,
     UsersComponent,
-    DarkModeComponent
+    DarkModeComponent,
+    SignUpComponent
   ],
   imports: [
     BrowserModule
