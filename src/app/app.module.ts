@@ -30,6 +30,7 @@ import { ProductDetailsComponent } from './products/product-details/product-deta
 import { UsersComponent } from './admin/users/users.component';
 import { DarkModeComponent } from './dark-mode/dark-mode.component';
 import { SignUpComponent } from './sign-up/sign-up.component';
+import { CoachesComponent } from './coaches/coaches.component';
 
 @NgModule({
   declarations: [
@@ -61,7 +62,8 @@ import { SignUpComponent } from './sign-up/sign-up.component';
     ProductDetailsComponent,
     UsersComponent,
     DarkModeComponent,
-    SignUpComponent
+    SignUpComponent,
+    CoachesComponent
   ],
   imports: [
     BrowserModule
