@@ -31,6 +31,7 @@ import { UsersComponent } from './admin/users/users.component';
 import { DarkModeComponent } from './dark-mode/dark-mode.component';
 import { SignUpComponent } from './sign-up/sign-up.component';
 import { CoachesComponent } from './coaches/coaches.component';
+import { BestSellingProductsComponent } from './best-selling-products/best-selling-products.component';
 
 @NgModule({
   declarations: [
@@ -63,7 +64,8 @@ import { CoachesComponent } from './coaches/coaches.component';
     UsersComponent,
     DarkModeComponent,
     SignUpComponent,
-    CoachesComponent
+    CoachesComponent,
+    BestSellingProductsComponent
   ],
   imports: [
     BrowserModule
