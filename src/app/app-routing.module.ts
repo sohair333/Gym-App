@@ -7,6 +7,10 @@ import { CoachesComponent } from './coaches/coaches.component';
 import { HomeComponent } from './home/home.component';
 import { ProductDetailsComponent } from './products/product-details/product-details.component';
 import { ProductsComponent } from './products/products.component';
+import { CurrentTranningComponent } from './tranning/current-tranning/current-tranning.component';
+import { NewTranningComponent } from './tranning/new-tranning/new-tranning.component';
+import { PastTranningComponent } from './tranning/past-tranning/past-tranning.component';
+import { TranningComponent } from './tranning/tranning.component';
 
 
 
@@ -20,6 +24,11 @@ const approutes: Routes = [
   ]},
   {path:'products',component:ProductsComponent,children:[
       {path:'/details',component:ProductDetailsComponent}
+  ]},
+  {path:'traning',component:TranningComponent,children:[
+    {path:'/new-traning',component:NewTranningComponent},
+    {path:'/current-traning',component:CurrentTranningComponent},
+    {path:'/past-traning',component:PastTranningComponent}
   ]} 
 ];
 
