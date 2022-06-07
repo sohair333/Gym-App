@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
+import { AngularFireAuthModule } from '@angular/fire/compat/auth';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
@@ -32,6 +32,16 @@ import { DarkModeComponent } from './dark-mode/dark-mode.component';
 import { SignUpComponent } from './sign-up/sign-up.component';
 import { CoachesComponent } from './Coaches/coaches.component';
 import { BestSellingProductsComponent } from './best-selling-products/best-selling-products.component';
+
+const firebaseConfig = {
+  apiKey: "AIzaSyARlf11NHm8lfpJrS5_LAOq4HhlAQV6i-w",
+  authDomain: "gymapp-8911a.firebaseapp.com",
+  projectId: "gymapp-8911a",
+  storageBucket: "gymapp-8911a.appspot.com",
+  messagingSenderId: "164495475199",
+  appId: "1:164495475199:web:00378485abb58cb51427ca",
+  measurementId: "G-X3YFRMFJWQ"
+};
 
 @NgModule({
   declarations: [
@@ -68,7 +78,9 @@ import { BestSellingProductsComponent } from './best-selling-products/best-selli
     BestSellingProductsComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    AngularFireModule.initializeApp(firebaseConfig),
+
   ],
   providers: [],
   bootstrap: [AppComponent]
