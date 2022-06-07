@@ -1,11 +1,16 @@
 import { Component, NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { AdminFormComponent } from './admin/admin-form/admin-form.component';
+import { AdminProductsComponent } from './admin/admin-products/admin-products.component';
+import { UsersComponent } from './admin/users/users.component';
 import { AuthComponent } from './auth/auth.component';
 import { ChatComponent } from './chat/chat.component';
 import { CoachesDetailsComponent } from './Coaches/coaches-details/coaches-details.component';
 import { CoachesListComponent } from './Coaches/coaches-list/coaches-list.component';
 import { CoachesComponent } from './Coaches/coaches.component';
+import { ExercisesComponent } from './exercises/exercises.component';
 import { HomeComponent } from './home/home.component';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { ProductDetailsComponent } from './products/product-details/product-details.component';
 import { ProductsComponent } from './products/products.component';
 import { SignUpComponent } from './sign-up/sign-up.component';
@@ -33,7 +38,13 @@ const approutes: Routes = [
     {path:'/past-traning',component:PastTranningComponent}
   ]},
   {path:'auth',component:AuthComponent},
-  {path:'signUp',component:SignUpComponent} 
+  {path:'signUp',component:SignUpComponent},
+  {path:'page-not-found',component:PageNotFoundComponent},
+  {path:'exercises',component:ExercisesComponent},
+  {path:'admin-products',component:AdminProductsComponent},
+  {path:'admin-form',component:AdminFormComponent},
+  {path:'users',component:UsersComponent}
+
 
 ];
 
