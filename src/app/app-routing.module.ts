@@ -1,12 +1,14 @@
 import { Component, NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { AuthComponent } from './auth/auth.component';
 import { ChatComponent } from './chat/chat.component';
 import { CoachesDetailsComponent } from './Coaches/coaches-details/coaches-details.component';
 import { CoachesListComponent } from './Coaches/coaches-list/coaches-list.component';
-import { CoachesComponent } from './coaches/coaches.component';
+import { CoachesComponent } from './Coaches/coaches.component';
 import { HomeComponent } from './home/home.component';
 import { ProductDetailsComponent } from './products/product-details/product-details.component';
 import { ProductsComponent } from './products/products.component';
+import { SignUpComponent } from './sign-up/sign-up.component';
 import { CurrentTranningComponent } from './tranning/current-tranning/current-tranning.component';
 import { NewTranningComponent } from './tranning/new-tranning/new-tranning.component';
 import { PastTranningComponent } from './tranning/past-tranning/past-tranning.component';
@@ -29,7 +31,10 @@ const approutes: Routes = [
     {path:'/new-traning',component:NewTranningComponent},
     {path:'/current-traning',component:CurrentTranningComponent},
     {path:'/past-traning',component:PastTranningComponent}
-  ]} 
+  ]},
+  {path:'auth',component:AuthComponent},
+  {path:'signUp',component:SignUpComponent} 
+
 ];
 
 @NgModule({
