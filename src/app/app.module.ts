@@ -32,6 +32,9 @@ import { DarkModeComponent } from './dark-mode/dark-mode.component';
 import { SignUpComponent } from './sign-up/sign-up.component';
 import { CoachesComponent } from './Coaches/coaches.component';
 import { BestSellingProductsComponent } from './best-selling-products/best-selling-products.component';
+import { ProgramComponent } from './program/program.component';
+import { ProgramListComponent } from './program/program-list/program-list.component';
+import { ProgramDetailsComponent } from './program/program-details/program-details.component';
 
 const firebaseConfig = {
   apiKey: "AIzaSyARlf11NHm8lfpJrS5_LAOq4HhlAQV6i-w",
@@ -75,7 +78,10 @@ const firebaseConfig = {
     DarkModeComponent,
     SignUpComponent,
     CoachesComponent,
-    BestSellingProductsComponent
+    BestSellingProductsComponent,
+    ProgramComponent,
+    ProgramListComponent,
+    ProgramDetailsComponent
   ],
   imports: [
     BrowserModule,
