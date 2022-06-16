@@ -35,6 +35,7 @@ import { BestSellingProductsComponent } from './best-selling-products/best-selli
 import { ProgramComponent } from './program/program.component';
 import { ProgramListComponent } from './program/program-list/program-list.component';
 import { ProgramDetailsComponent } from './program/program-details/program-details.component';
+import { GalleryComponent } from './gallery/gallery.component';
 
 const firebaseConfig = {
   apiKey: "AIzaSyARlf11NHm8lfpJrS5_LAOq4HhlAQV6i-w",
@@ -81,7 +82,8 @@ const firebaseConfig = {
     BestSellingProductsComponent,
     ProgramComponent,
     ProgramListComponent,
-    ProgramDetailsComponent
+    ProgramDetailsComponent,
+    GalleryComponent
   ],
   imports: [
     BrowserModule,
