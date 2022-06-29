@@ -1,8 +1,11 @@
 import { Component, NgModule } from '@angular/core';
+import { FormsModule } from '@angular/forms';
+import { BrowserModule } from '@angular/platform-browser';
 import { RouterModule, Routes } from '@angular/router';
 import { AdminFormComponent } from './admin/admin-form/admin-form.component';
 import { AdminProductsComponent } from './admin/admin-products/admin-products.component';
 import { UsersComponent } from './admin/users/users.component';
+import { AppComponent } from './app.component';
 import { AuthComponent } from './auth/auth.component';
 import { ChatComponent } from './chat/chat.component';
 import { CoachesDetailsComponent } from './Coaches/coaches-details/coaches-details.component';
@@ -22,9 +25,10 @@ import { TranningComponent } from './tranning/tranning.component';
 
 
 const approutes: Routes = [
-  {path:'',redirectTo:'/home',pathMatch:'full'},
+  {path:'',redirectTo:'/auth',pathMatch:'full'},
   {path:'home',component:HomeComponent},
   {path:'chat',component:ChatComponent},
+  {path:'auth',component:AuthComponent},
   {path:'coaches',component:CoachesComponent,children:[
       {path:'/details',component:CoachesDetailsComponent},
       {path:'/list',component:CoachesListComponent}
@@ -37,17 +41,16 @@ const approutes: Routes = [
     {path:'/current-traning',component:CurrentTranningComponent},
     {path:'/past-traning',component:PastTranningComponent}
   ]},
-  {path:'auth',component:AuthComponent},
   {path:'signUp',component:SignUpComponent},
   {path:'page-not-found',component:PageNotFoundComponent},
   {path:'exercises',component:ExercisesComponent},
+  {path:'users',component:UsersComponent},
   {path:'admin-products',component:AdminProductsComponent},
   {path:'admin-form',component:AdminFormComponent},
-  {path:'users',component:UsersComponent}
+  
 
 
 ];
-
 @NgModule({
   imports: [RouterModule.forRoot(approutes,{ useHash: true })],
   exports: [RouterModule]

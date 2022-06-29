@@ -36,6 +36,11 @@ import { ProgramComponent } from './program/program.component';
 import { ProgramListComponent } from './program/program-list/program-list.component';
 import { ProgramDetailsComponent } from './program/program-details/program-details.component';
 import { GalleryComponent } from './gallery/gallery.component';
+import { RouterModule } from '@angular/router';
+import { AppRoutingModule } from './app-routing.module';
+import { AngularFireModule } from '@angular/fire/compat';
+import { AuthService } from './shared/auth.service';
+import { HttpClientModule } from '@angular/common/http';
 
 const firebaseConfig = {
   apiKey: "AIzaSyARlf11NHm8lfpJrS5_LAOq4HhlAQV6i-w",
@@ -87,10 +92,15 @@ const firebaseConfig = {
   ],
   imports: [
     BrowserModule,
+    RouterModule,
+    AppRoutingModule,
     AngularFireModule.initializeApp(firebaseConfig),
+    HttpClientModule,
+   
 
   ],
-  providers: [],
+  providers: [AuthService,
+    ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
