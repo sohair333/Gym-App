@@ -3,8 +3,6 @@ import { NgForm } from '@angular/forms';
 import { Router } from '@angular/router';
 import { Observable } from "rxjs";
 import { AuthResponseData, authService } from "./auth.service";
-
-
 import 'firebase/compat/auth';
 import 'firebase/compat/firestore';
 import { AuthService } from "../shared/auth.service";
@@ -13,7 +11,7 @@ import { AuthService } from "../shared/auth.service";
   templateUrl: './auth.component.html',
   styleUrls: ['./auth.component.css']
 })
-export class AuthComponent implements OnInit {
+export class AuthComponent  {
 
   isLoginMode= true;
     isLoading = false;
