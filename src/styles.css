@@ -1,105 +1,134 @@
 /* You can add global styles to this file, and also import other style files */
-.form-control {
-	font-size: 16px;
-	transition: all 0.4s;
-	box-shadow: none;
+body {
+	margin:  0;
 }
-.form-control:focus {
-	border-color: #5cb85c;
+.page-content {
+	width: 100%;
+	margin:  0 auto;
+	background: black;
+	display: flex;
+	display: -webkit-flex;
+	justify-content: center;
+	margin-top: -10%;
+	align-items: center;
+	
 }
-.form-control, .btn {
-	border-radius: 50px;
-	outline: none !important;
-}
-.signup-form {
-	width: 480px;
-	margin: 0 auto;
-	padding: 30px 0;
-}
-.signup-form form {
-	border-radius: 5px;
-	margin-bottom: 20px;
-	background: #fff;
-	box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
-	padding: 40px;
-}
-.signup-form a {
-	color: #5cb85c;
-}    
-.signup-form h2 {
-	text-align: center;
-	font-size: 34px;
-	margin: 10px 0 15px;
-}
-.signup-form .hint-text {
-	color: #999;
-	text-align: center;
-	margin-bottom: 20px;
-}
-.signup-form .form-group {
-	margin-bottom: 20px;
-}
-.signup-form .btn {        
-	font-size: 18px;
-	line-height: 26px;
-	font-weight: bold;
-	text-align: center;
-}
-.signup-btn {
-	text-align: center;
-	border-color: #5cb85c;
-	transition: all 0.4s;
-}
-.signup-btn:hover {
-	background: #5cb85c;
-	opacity: 0.8;
-}
-.or-seperator {
-	margin: 50px 0 15px;
-	text-align: center;
-	border-top: 1px solid #e0e0e0;
-}
-.or-seperator b {
-	padding: 0 10px;
-	width: 40px;
-	height: 40px;
-	font-size: 16px;
-	text-align: center;
-	line-height: 40px;
-	background: #fff;
-	display: inline-block;
-	border: 1px solid #e0e0e0;
-	border-radius: 50%;
-	position: relative;
-	top: -22px;
-	z-index: 1;
-}
-.social-btn .btn {
+.form-v9-content  {
+	width: 975px;
+	border-radius: 15px;
+	margin: 185px 0;
+	font-family: 'Nunito', sans-serif;
 	color: #fff;
-	margin: 10px 0 0 15px;
-	font-size: 15px;
-	border-radius: 50px;
-	font-weight: normal;
+	font-weight: 700;
+	font-size: 16px;
+	position: relative;
+}
+.form-v9-content .form-detail {
+    padding: 30px 135px 30px 100px;
+	position: relative;
+}
+.form-v9-content .form-detail h2 {
+	font-size: 35px;
+	text-align: center;
+	position: relative;
+	padding: 16px 0 13px;
+	margin-bottom: 55px;
+}
+.form-v9-content .form-detail h2::after {
+	background: #d95252;
+	width: 140px;
+	height: 3px;
+	content: "";
+	position: absolute;
+	top: 100%;
+	left: 50%;
+    transform: translateX(-50%);
+  
+}
+.form-v9-content .form-row-total {
+    display: flex;
+    display: -webkit-flex;
+    justify-content: space-between;
+   
+}
+.form-v9-content .form-row {
+    width: 45%;
+}
+.form-v9-content .form-detail .form-row-last {
+	text-align: center;
+}
+.form-v9-content .form-detail .input-text {
+	margin-bottom: 45px;
+}
+.form-v9-content .form-detail input {
+	width: 100%;
+    padding: 14.5px 0px 14.5px 30px;
+    border: 2px solid #ccc;
+    appearance: unset;
+    outline: none;
+    border-radius: 27.5px;
+	font-family: 'Nunito', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    background: rgba(255, 255, 255, 0.2)
+}
+.form-v9-content .form-detail input:focus {
+	border: 2px solid #999;
+}
+.form-v9-content .form-detail .register {
+	background: #f25d5d;
+	border-radius: 25px;
+	width: 180px;
+	box-shadow: 0px 8px 16px 0px #00000033;
 	border: none;
-	transition: all 0.4s;
-}	
-.social-btn .btn:first-child {
-	margin-left: 0;
+	margin: 20px 0 73px 35px;
+	cursor: pointer;
+	font-family: 'Nunito', sans-serif;
+	color: #fff;
+	font-weight: 700;
+	font-size: 16px;
 }
-.social-btn .btn:hover {
-	opacity: 0.8;
+.form-v9-content .form-detail .register:hover {
+	background: #d95252;
 }
-.social-btn .btn-primary {
-	background: #507cc0;
+.form-v9-content .form-detail .form-row-last input {
+	padding: 14px;
 }
-.social-btn .btn-info {
-	background: #64ccf1;
+input::-webkit-input-placeholder { 
+  color: #e5e5e5;
+  font-size: 16px;
 }
-.social-btn .btn-danger {
-	background: #df4930;
+input::-moz-placeholder { 
+  color: #e5e5e5;
+  font-size: 16px;
 }
-.social-btn .btn i {
-	float: left;
-	margin: 3px 10px;
-	font-size: 20px;
+input:-ms-input-placeholder {
+  color: #e5e5e5;
+  font-size: 16px;
 }
+input:-moz-placeholder { 
+  color: #e5e5e5;
+  font-size: 16px;
+}
+
+
+@media screen and (max-width: 1199px) {
+	.form-v9-content {
+	    margin: 185px 20px;
+	}
+}
+@media screen and (max-width: 767px) {
+	.form-v9-content .form-row-total {
+		flex-direction: column;
+	
+	}
+	.form-v9-content .form-row {
+		width: 100%;
+	}
+}
+@media screen and (max-width: 575px) {
+	.form-v9-content .form-detail {
+	    padding: 30px 45px 30px 10px;
+	}
+}
+

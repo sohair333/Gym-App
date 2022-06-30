@@ -1,28 +1,26 @@
-<div class="signup-form">
-    <form action="/examples/actions/confirmation.php" method="post">
-		<h2>Create an Account</h2>
-		<p class="hint-text">Sign up with your social media account or email address</p>
-		<div class="social-btn text-center">
-			<a href="#" class="btn btn-primary btn-lg"><i class="fa fa-facebook"></i> Facebook</a>
-			<a href="#" class="btn btn-info btn-lg"><i class="fa fa-twitter"></i> Twitter</a>
-			<a href="#" class="btn btn-danger btn-lg"><i class="fa fa-google"></i> Google</a>
-		</div>
-		<div class="or-seperator"><b>or</b></div>
-        <div class="form-group">
-        	<input type="text" class="form-control input-lg" name="username" placeholder="Username" required="required">
-        </div>
-		<div class="form-group">
-        	<input type="email" class="form-control input-lg" name="email" placeholder="Email Address" required="required">
-        </div>
-		<div class="form-group">
-            <input type="password" class="form-control input-lg" name="password" placeholder="Password" required="required">
-        </div>
-		<div class="form-group">
-            <input type="password" class="form-control input-lg" name="confirm_password" placeholder="Confirm Password" required="required">
-        </div>  
-        <div class="form-group">
-            <button type="submit" class="btn btn-success btn-lg btn-block signup-btn">Sign Up</button>
-        </div>
-    </form>
-    <div class="text-center">Already have an account? <a href="#">Login here</a></div>
+<div class="page-content">
+    <div class="form-v9-content" style="background-image: url('assets//background//240_F_94419619_iKTOvNF0c5t8TbCq3B581wn51zZLVGZ3.jpg');background-repeat: no-repeat;background-size: cover;" >
+        <form class="form-detail" action="#" method="post">
+            <h2>Registration Form</h2>
+            <div class="form-row-total">
+                <div class="form-row">
+                    <input type="text" name="full-name" id="full-name" class="input-text" placeholder="Your Name" required>
+                </div>
+                <div class="form-row">
+                    <input type="text" name="your-email" id="your-email" class="input-text" placeholder="Your Email" required pattern="[^@]+@[^@]+.[a-zA-Z]{2,6}">
+                </div>
+            </div>
+            <div class="form-row-total">
+                <div class="form-row">
+                    <input type="password" name="password" id="password" class="input-text" placeholder="Your Password" required>
+                </div>
+                <div class="form-row">
+                    <input type="password" name="comfirm-password" id="comfirm-password" class="input-text" placeholder="Comfirm Password" required>
+                </div>
+            </div>
+            <div class="form-row-last">
+                <input type="submit" name="register" class="register" value="Register">
+            </div>
+        </form>
+    </div>
 </div>

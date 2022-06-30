@@ -1,7 +1,7 @@
 import { Component, NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
-import { RouterModule, Routes } from '@angular/router';
+import { Router, RouterModule, Routes } from '@angular/router';
 import { AdminFormComponent } from './admin/admin-form/admin-form.component';
 import { AdminProductsComponent } from './admin/admin-products/admin-products.component';
 import { UsersComponent } from './admin/users/users.component';
@@ -29,30 +29,30 @@ const approutes: Routes = [
   {path:'home',component:HomeComponent},
   {path:'chat',component:ChatComponent},
   {path:'auth',component:AuthComponent},
-  {path:'coaches',component:CoachesComponent,children:[
-      {path:'/details',component:CoachesDetailsComponent},
-      {path:'/list',component:CoachesListComponent}
-  ]},
-  {path:'products',component:ProductsComponent,children:[
-      {path:'/details',component:ProductDetailsComponent}
-  ]},
-  {path:'traning',component:TranningComponent,children:[
-    {path:'/new-traning',component:NewTranningComponent},
-    {path:'/current-traning',component:CurrentTranningComponent},
-    {path:'/past-traning',component:PastTranningComponent}
-  ]},
-  {path:'signUp',component:SignUpComponent},
-  {path:'page-not-found',component:PageNotFoundComponent},
-  {path:'exercises',component:ExercisesComponent},
-  {path:'users',component:UsersComponent},
-  {path:'admin-products',component:AdminProductsComponent},
-  {path:'admin-form',component:AdminFormComponent},
+  // {path:'coaches',component:CoachesComponent,children:[
+  //     {path:'/details',component:CoachesDetailsComponent},
+  //     {path:'/list',component:CoachesListComponent}
+  // ]},
+  // {path:'products',component:ProductsComponent,children:[
+  //     {path:'/details',component:ProductDetailsComponent}
+  // ]},
+  // {path:'traning',component:TranningComponent,children:[
+  //   {path:'/new-traning',component:NewTranningComponent},
+  //   {path:'/current-traning',component:CurrentTranningComponent},
+  //   {path:'/past-traning',component:PastTranningComponent}
+  // ]},
+  // {path:'signUp',component:SignUpComponent},
+  // {path:'page-not-found',component:PageNotFoundComponent},
+  // {path:'exercises',component:ExercisesComponent},
+  // {path:'users',component:UsersComponent},
+  // {path:'admin-products',component:AdminProductsComponent},
+  // {path:'admin-form',component:AdminFormComponent},
   
 
 
 ];
 @NgModule({
-  imports: [RouterModule.forRoot(approutes,{ useHash: true })],
+  imports: [RouterModule.forRoot(approutes)],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }

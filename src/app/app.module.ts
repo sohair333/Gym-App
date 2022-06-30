@@ -99,8 +99,7 @@ const firebaseConfig = {
    
 
   ],
-  providers: [AuthService,
-    ],
+  providers: [AuthService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
