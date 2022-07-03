@@ -27,7 +27,7 @@ export class authService {
 
     }
  signup(email :string ,password :string){
-    return this.http.post<AuthResponseData>('https://identitytoolkit.googleapis.com/v1/accounts:signUp?key=AIzaSyBmGSXtn0N9QNzHmt_uQENaMAX591sLoiA',{
+    return this.http.post<AuthResponseData>('https://identitytoolkit.googleapis.com/v1/accounts:signUp?key=AIzaSyCiiDoPgNaMDVd-HVwr_ycJxeQruTmOQ1M',{
         email: email,
         password:password,
         returnSecureToken:true
@@ -37,14 +37,14 @@ export class authService {
     }));
  }
  logIn(email:string,password:string){
-    return  this.http.post<AuthResponseData>('https://identitytoolkit.googleapis.com/v1/accounts:signInWithPassword?key=AIzaSyBmGSXtn0N9QNzHmt_uQENaMAX591sLoiA',{
+    return  this.http.post<AuthResponseData>('https://identitytoolkit.googleapis.com/v1/accounts:signInWithPassword?key=AIzaSyCiiDoPgNaMDVd-HVwr_ycJxeQruTmOQ1M',{
          email:email,
          password:password,
          returnSecureToken:true
      }).pipe(catchError(this.handleError),tap(resData =>{
         this.handleAuthentication(resData.email,resData.localId,
             resData.idToken,+resData.expiresIn);
-}));
+   }));
 }
 autoLogout(expirationDuration:number){
     this.tokenExpirationTimer=setTimeout(() => {
@@ -114,4 +114,5 @@ autoLogin(){
     localStorage.setItem('userData',JSON.stringify(user));
 
  }
+ 
 }

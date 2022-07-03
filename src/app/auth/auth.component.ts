@@ -13,34 +13,33 @@ import { AuthService } from "../shared/auth.service";
 })
 export class AuthComponent  {
 
-  isLoginMode= true;
     isLoading = false;
+    isLoginMode= true;
     error !:string  | null ;
-    constructor(private authService:authService,private router : Router,
+    constructor(private authService:authService,
+    private router : Router,
     private angularFireAuth:AuthService){
         
-    }
+    }  
     onSwitchMode(){
-        this.isLoginMode=!this.isLoginMode;
-        
-
+      this.isLoginMode=!this.isLoginMode;
     }
-    
+  
     onSubmit(form :NgForm){
-        // console.log(form.value);
+       console.log(form.value);
         if(!form.valid){
             return;
+            console.log('hello');
         }
         const email = form.value.email;
         const password = form.value.password;
         let AuthObs :Observable<AuthResponseData>;
         this.isLoading = true;
-        if(this.isLoginMode){
+        if(form.valid){
            AuthObs = this.authService.logIn(email,password);
         }  
         else{
            AuthObs= this.authService.signup(email, password);
-
         }  
         
         AuthObs.subscribe(
@@ -70,6 +69,9 @@ export class AuthComponent  {
   
 
    
+  }
+  LoginNow(){
+    this.router.navigate(['/signUp']);
   }
 
 }

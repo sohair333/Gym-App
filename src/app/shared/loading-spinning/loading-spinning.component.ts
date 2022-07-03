@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-loading-spinning',
-  templateUrl: './loading-spinning.component.html',
+  template: '<div class="lds-ripple"><div></div><div></div></div>',
   styleUrls: ['./loading-spinning.component.css']
 })
 export class LoadingSpinningComponent implements OnInit {

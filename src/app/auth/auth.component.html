@@ -1,25 +1,48 @@
 <div class="page-content">
-    <div class="form-v9-content" style="background-image: url('assets//background//240_F_94419619_iKTOvNF0c5t8TbCq3B581wn51zZLVGZ3.jpg');background-repeat: no-repeat;background-size: cover;" >
-        <form class="form-detail" action="#" method="post">
+    <div class="form-v9-content" style="background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 40%, rgba(64,106,115,1) 100%);" >
+        <app-alert [message]="error"
+         *ngIf="error"
+          (close)="onHandleError()"></app-alert>
+         <div *ngIf="isLoading" style="text-align: center;">
+         <app-loading-spinning></app-loading-spinning>
+        </div>
+         
+        <form #authForm="ngForm" (ngSubmit)="onSubmit(authForm)" *ngIf="!isLoading" class="form-detail" method="post">
             <h2>Registration Form</h2>
             <div class="form-row-total">
                 <div class="form-row">
-                    <input type="text" name="full-name" id="full-name" class="input-text" placeholder="Your Name" required>
+                    <input type="text" name="full-name" id="full-name"
+                    ngModel class="input-text" placeholder="Your Name..." required>
                 </div>
                 <div class="form-row">
-                    <input type="text" name="your-email" id="your-email" class="input-text" placeholder="Your Email" required pattern="[^@]+@[^@]+.[a-zA-Z]{2,6}">
+                    <input type="text" name="your-email" id="your-email" class="input-text" placeholder="Your Email..." required 
+                    ngModel
+                    pattern="[^@]+@[^@]+.[a-zA-Z]{2,6}"
+                    email>
                 </div>
             </div>
             <div class="form-row-total">
                 <div class="form-row">
-                    <input type="password" name="password" id="password" class="input-text" placeholder="Your Password" required>
+                    <input type="password" name="password" id="password" 
+                    required
+                minlength="5"
+                class="input-text" 
+                ngModel
+                placeholder="Your Password..." required>
                 </div>
                 <div class="form-row">
-                    <input type="password" name="comfirm-password" id="comfirm-password" class="input-text" placeholder="Comfirm Password" required>
+                    <input type="password" name="comfirm-password" id="comfirm-password"
+                     minlength="5"
+                    class="input-text" 
+                    ngModel
+                    class="input-text" placeholder="Comfirm Password..." required>
                 </div>
             </div>
             <div class="form-row-last">
-                <input type="submit" name="register" class="register" value="Register">
+                <input type="submit" [disabled]="!authForm.valid" name="register" class="register" (click)="onSwitchMode()" value="Register">
+            </div>
+            <div class="last_div">
+                Are you Member! <span  class="login"(click)="LoginNow()">Login?</span>
             </div>
         </form>
     </div>

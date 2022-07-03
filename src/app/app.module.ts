@@ -41,15 +41,16 @@ import { AppRoutingModule } from './app-routing.module';
 import { AngularFireModule } from '@angular/fire/compat';
 import { AuthService } from './shared/auth.service';
 import { HttpClientModule } from '@angular/common/http';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 const firebaseConfig = {
-  apiKey: "AIzaSyARlf11NHm8lfpJrS5_LAOq4HhlAQV6i-w",
-  authDomain: "gymapp-8911a.firebaseapp.com",
-  projectId: "gymapp-8911a",
-  storageBucket: "gymapp-8911a.appspot.com",
-  messagingSenderId: "164495475199",
-  appId: "1:164495475199:web:00378485abb58cb51427ca",
-  measurementId: "G-X3YFRMFJWQ"
+  apiKey: 'AIzaSyC1CxOyoPfxewVfGZ2JzgFVHIkO3hqfoA0',
+  authDomain: 'e-commerce-website-a5b86.firebaseapp.com',
+  projectId: 'e-commerce-website-a5b86',
+  storageBucket: 'e-commerce-website-a5b86.appspot.com',
+  messagingSenderId: '993242594375',
+  appId: '1:993242594375:web:c7938a4d4df88bd9850562',
+  measurementId: 'G-ZRMMW9T3ZX',
 };
 
 @NgModule({
@@ -92,10 +93,13 @@ const firebaseConfig = {
   ],
   imports: [
     BrowserModule,
+    ReactiveFormsModule,
+    FormsModule,
     RouterModule,
     AppRoutingModule,
     AngularFireModule.initializeApp(firebaseConfig),
     HttpClientModule,
+   
    
 
   ],
