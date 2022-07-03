@@ -29,7 +29,6 @@ import { ChatComponent } from './chat/chat.component';
 import { ProductDetailsComponent } from './products/product-details/product-details.component';
 import { UsersComponent } from './admin/users/users.component';
 import { DarkModeComponent } from './dark-mode/dark-mode.component';
-import { SignUpComponent } from './sign-up/sign-up.component';
 import { CoachesComponent } from './Coaches/coaches.component';
 import { BestSellingProductsComponent } from './best-selling-products/best-selling-products.component';
 import { ProgramComponent } from './program/program.component';
@@ -83,7 +82,6 @@ const firebaseConfig = {
     ProductDetailsComponent,
     UsersComponent,
     DarkModeComponent,
-    SignUpComponent,
     CoachesComponent,
     BestSellingProductsComponent,
     ProgramComponent,

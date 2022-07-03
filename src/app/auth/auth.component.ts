@@ -8,8 +8,7 @@ import 'firebase/compat/firestore';
 import { AuthService } from "../shared/auth.service";
 @Component({
   selector: 'app-auth',
-  templateUrl: './auth.component.html',
-  styleUrls: ['./auth.component.css']
+  templateUrl: './auth.component.html'
 })
 export class AuthComponent  {
 
@@ -26,40 +25,43 @@ export class AuthComponent  {
     }
   
     onSubmit(form :NgForm){
-       console.log(form.value);
-        if(!form.valid){
-            return;
-            console.log('hello');
-        }
-        const email = form.value.email;
-        const password = form.value.password;
-        let AuthObs :Observable<AuthResponseData>;
-        this.isLoading = true;
-        if(form.valid){
-           AuthObs = this.authService.logIn(email,password);
-        }  
-        else{
-           AuthObs= this.authService.signup(email, password);
-        }  
-        
-        AuthObs.subscribe(
-            resData => {
-                console.log(resData);
-                this.isLoading= false;
-                this.router.navigate(['./home']);
-               
-              },
-              ErrorMsg => {
-                console.log(ErrorMsg);
-               
-                this.error = ErrorMsg;
-                this.isLoading=false;
-                
-              }
-            );
+      console.log(form.value);
+     
+      if(!form.valid){
+         
+          return;
+          
+      }
+      const email = form.value.email;
+      const password = form.value.password;
+      let AuthObs :Observable<AuthResponseData>;
+      this.isLoading = true;
+      if(this.isLoginMode){
+         AuthObs = this.authService.logIn(email,password);
+      }  
+      else{
+         AuthObs= this.authService.signup(email, password);
 
-        form.reset();
-    }
+      }  
+      
+      AuthObs.subscribe(
+          resData => {
+             
+              console.log(resData);
+              this.isLoading= false;
+              this.router.navigate(['./home']);
+             
+            },
+            ErrorMsg => {
+              console.log(ErrorMsg);
+              this.error = ErrorMsg;
+              this.isLoading=false;
+              
+            }
+          );
+
+      form.reset();
+  }
     onHandleError(){
       this.error=null;
   }
