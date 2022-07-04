@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Fredoka:wght@300;400&family=Indie+Flower&family=Lobster&family=Macondo&family=Ms+Madi&family=Nunito:wght@200;300;400&family=Pacifico&family=Playfair+Display:ital@0;1&family=Poppins:ital,wght@0,200;1,200&family=Redressed&family=Roboto:ital,wght@0,100;0,300;1,300&family=Sansita+Swashed:wght@300&family=Source+Code+Pro:ital,wght@1,300&family=Source+Sans+Pro:ital,wght@0,200;0,400;1,300;1,400&family=Tangerine:wght@400;700&family=Varela&display=swap');
 ul li {
     list-style:none;
     
@@ -34,6 +35,7 @@ ul li a {
     border-bottom: 1px solid black;
     transition: 0.4s;
 }
+
 ul li:hover a {
     padding-left: 50px;
 } 
@@ -86,4 +88,52 @@ section{
     background-size: cover;
     height: 100vh;
     transition: all .5s;
+    
+}
+.text-container{
+    position: absolute;
+    top: 20%;
+    left: 25%;
+}
+.text-container p {
+    color:darkred;
+    font-size: 33px;
+    letter-spacing: 3px;
+    font-weight: 900;
+    font-family: 'Tangerine', cursive;
+    
+}
+.text-container button {
+    padding: 10px;
+    color: white;
+    background-color: yellowgreen;
+    outline: none;
+    border-radius: 5px;
+    margin-bottom: 80px;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+}
+.text-container button:hover {
+    
+    background-color: rgb(104, 139, 32);
+    border-radius: 7px;
+    transform: scale(1.1);
+    font-size: 22px;
+}
+.slider-img{
+    display: flex;
+  
+}
+.slider-img .row {
+    margin-left: 15px;
+}
+.slider-img .row img{
+    border-radius: 5px;
+
+}
+.slider-img .row img:hover{
+   opacity: .5;
+    
 }
