@@ -41,7 +41,7 @@ export class AuthComponent  {
       }  
       else{
          AuthObs= this.authService.signup(email, password);
-
+        
       }  
       
       AuthObs.subscribe(
@@ -52,10 +52,13 @@ export class AuthComponent  {
               this.router.navigate(['./home']);
              
             },
+            
             ErrorMsg => {
               console.log(ErrorMsg);
               this.error = ErrorMsg;
               this.isLoading=false;
+             
+              
               
             }
           );
@@ -72,8 +75,8 @@ export class AuthComponent  {
 
    
   }
-  LoginNow(){
-    this.router.navigate(['/signUp']);
-  }
+  // LoginNow(){
+  //   this.router.navigate(['/signUp']);
+  // }
 
 }

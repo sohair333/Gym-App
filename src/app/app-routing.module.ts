@@ -25,52 +25,25 @@ import { TranningComponent } from './tranning/tranning.component';
 
 
 const approutes: Routes = [
-  
-  {path:'',redirectTo:'/auth',pathMatch:'full'},
-  {path:'home',component:HomeComponent,canActivate:[AuthGuard]},
-  {path:'chat',component:ChatComponent,canActivate:[AuthGuard]},
-  {path:'auth',component:AuthComponent},
-  {path:'users',component:UsersComponent,canActivate:[AuthGuard]},
-  {path:'admin-products',component:AdminProductsComponent,canActivate:[AuthGuard]},
-  {path:'admin-form',component:AdminFormComponent,canActivate:[AuthGuard]},
-  {path:'coaches/details',component:CoachesDetailsComponent,canActivate:[AuthGuard]},
-  {path:'coaches/list',component:CoachesListComponent,canActivate:[AuthGuard]},
-  {path:'products',component:ProductsComponent,canActivate:[AuthGuard]},
-  {path:'products/details',component:ProductDetailsComponent,canActivate:[AuthGuard]},
-  {path:'exercises',component:ExercisesComponent,canActivate:[AuthGuard]},
-  {path:'trainning',component:TranningComponent,canActivate:[AuthGuard]},
-  {path:'traninning/new-tranning',component:NewTranningComponent,canActivate:[AuthGuard]},
-  {path:'tranning/current-traning',component:CurrentTranningComponent,canActivate:[AuthGuard]},
-  {path:'tranning/past-traning',component:PastTranningComponent,canActivate:[AuthGuard]},
-  {path:'page-not-found',component:PageNotFoundComponent,canActivate:[AuthGuard]},
 
-
-
-
-
-
-
-  
-  // {path:'coaches',component:CoachesComponent,children:[
-  //     {path:'/details',component:CoachesDetailsComponent},
-  //     {path:'/list',component:CoachesListComponent}
-  // ]},
-  // {path:'products',component:ProductsComponent,children:[
-  //     {path:'/details',component:ProductDetailsComponent}
-  // ]},
-  // {path:'traning',component:TranningComponent,children:[
-  //   {path:'/new-traning',component:NewTranningComponent},
-  //   {path:'/current-traning',component:CurrentTranningComponent},
-  //   {path:'/past-traning',component:PastTranningComponent}
-  // ]},
-  // {path:'signUp',component:SignUpComponent},
+  {path:'',redirectTo:'/home',pathMatch:'full'},
+  // {path:'auth',component:AuthComponent},
+  {path:'home',component:HomeComponent},
+  {path:'chat',component:ChatComponent},
+  {path:'users',component:UsersComponent},
+  {path:'admin-products',component:AdminProductsComponent},
+  {path:'admin-form',component:AdminFormComponent},
+  {path:'coaches/details',component:CoachesDetailsComponent},
+  {path:'coaches/list',component:CoachesListComponent},
+  {path:'products',component:ProductsComponent},
+  {path:'products/details',component:ProductDetailsComponent},
+  {path:'exercises',component:ExercisesComponent},
+  {path:'trainning',component:TranningComponent},
+  {path:'traninning/new-tranning',component:NewTranningComponent},
+  {path:'tranning/current-traning',component:CurrentTranningComponent},
+  {path:'tranning/past-traning',component:PastTranningComponent},
   // {path:'page-not-found',component:PageNotFoundComponent},
-  // {path:'exercises',component:ExercisesComponent},
-  // {path:'users',component:UsersComponent},
-  // {path:'admin-products',component:AdminProductsComponent},
-  // {path:'admin-form',component:AdminFormComponent},
-  
-
+  // { path: "**", component: PageNotFoundComponent }
 
 ];
 @NgModule({
