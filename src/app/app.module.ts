@@ -41,6 +41,7 @@ import { AngularFireModule } from '@angular/fire/compat';
 import { AuthService } from './shared/auth.service';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { DashboardComponent } from './dashboard/dashboard.component';
 
 const firebaseConfig = {
   apiKey: 'AIzaSyC1CxOyoPfxewVfGZ2JzgFVHIkO3hqfoA0',
@@ -87,7 +88,8 @@ const firebaseConfig = {
     ProgramComponent,
     ProgramListComponent,
     ProgramDetailsComponent,
-    GalleryComponent
+    GalleryComponent,
+    DashboardComponent
   ],
   imports: [
     BrowserModule,

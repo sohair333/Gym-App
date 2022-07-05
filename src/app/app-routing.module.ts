@@ -21,7 +21,7 @@ import { CurrentTranningComponent } from './tranning/current-tranning/current-tr
 import { NewTranningComponent } from './tranning/new-tranning/new-tranning.component';
 import { PastTranningComponent } from './tranning/past-tranning/past-tranning.component';
 import { TranningComponent } from './tranning/tranning.component';
-
+import {DashboardComponent} from './dashboard/dashboard.component'
 
 
 const approutes: Routes = [
@@ -38,6 +38,7 @@ const approutes: Routes = [
   {path:'products',component:ProductsComponent},
   {path:'products/details',component:ProductDetailsComponent},
   {path:'exercises',component:ExercisesComponent},
+  {path:'dashboard',component:DashboardComponent},
   {path:'trainning',component:TranningComponent},
   {path:'traninning/new-tranning',component:NewTranningComponent},
   {path:'tranning/current-traning',component:CurrentTranningComponent},

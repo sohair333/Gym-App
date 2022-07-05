@@ -1,0 +1,81 @@
+
+
+.text-container{
+    position: absolute;
+    top: 20%;
+    left: 30%;
+}
+.text-container p {
+    color:darkred;
+    font-size: 33px;
+    letter-spacing: 3px;
+    font-weight: 900;
+    font-family: 'Tangerine', cursive;
+    
+}
+.text-container button {
+    padding: 10px;
+    color: white;
+    background-color: yellowgreen;
+    outline: none;
+    border-radius: 5px;
+    margin-bottom: 80px;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+}
+.text-container button:hover {
+    
+    background-color: rgb(104, 139, 32);
+    border-radius: 7px;
+    transform: scale(1.1);
+    font-size: 22px;
+}
+
+@media  (min-width: 1199px) {
+	.slider-img{
+    
+        grid-template-columns: repeat(3,1fr) !important;
+      
+    }
+}
+@media (min-width: 767px) {
+	.slider-img{
+       
+        grid-template-columns: repeat(2,.5fr) ;
+      
+    }
+}
+@media (min-width: 575px) {
+	.slider-img{
+       
+        grid-template-columns: repeat(1,1fr);
+      
+    }
+}
+
+
+.slider-img{
+    display: grid;
+  
+}
+.slider-img .row {
+    margin-left: 15px;
+}
+.slider-img .row img{
+    border-radius: 5px;
+
+}
+.slider-img .row img:hover{
+   opacity: .5;
+    
+}
+section{
+    /* background: url("../../assets/background/rolling-purple-yoga-mat.jpg") no-repeat;
+    background-position:inherit;
+    background-size: cover; */
+    height: 100%;
+    transition: all .5s;
+    
+}

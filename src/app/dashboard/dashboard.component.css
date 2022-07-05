@@ -1,0 +1,44 @@
+.card{
+    margin-left:255px;
+    position: absolute;
+    top: 0;
+    margin-top: 15px;
+    padding: 2rem 1.5rem;
+    min-height: calc(100vh - 90px);
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 2rem;
+}
+.card-single{
+    display: flex;
+    justify-content: space-between;
+    background: rgba(124, 88, 88, 0.288);
+    height: 25vh;
+    width: 15vw;
+    border-radius: 10px;
+}
+.card-single div:last-child span{
+    color:darkred;
+    font-size: 3rem;
+}
+.card-single div:first-child span{
+    color: gray;
+} 
+.card-single img{
+    position: relative;
+    margin-top: 50px;
+    margin-right: 10px;
+}
+.card-single h1{
+    color: firebrick;
+    margin-left: 20px;
+    text-align: center;
+}
+.card-single span{
+    font-size: 20px;
+    margin-left: 20px;
+    text-align: center;
+}
+.card-single span + .card-single h1 {
+    margin-left: 20px;
+}
